@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>API</groupId>
-  <artifactId>FanCodeAssignment</artifactId>
+  <groupId>Api</groupId>
+  <artifactId>Fancode</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>FanCodeAssignment</name>
+  <name>Fancode</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -16,12 +16,18 @@
 
   <dependencies>
     
-    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+    <dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>7.10.2</version>
+	</dependency>
+	
+	 <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 	<dependency>
 	    <groupId>io.rest-assured</groupId>
 	    <artifactId>rest-assured</artifactId>
 	    <version>5.5.0</version>
-	    <scope>test</scope>
+	    
 	</dependency>
 	
 	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
@@ -31,13 +37,13 @@
 	    <version>7.20.0</version>
 	</dependency>
 	
-	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 	<dependency>
 	    <groupId>io.cucumber</groupId>
-	    <artifactId>cucumber-junit</artifactId>
-	    <version>7.20.0</version>
-	    <scope>test</scope>
+	    <artifactId>cucumber-testng</artifactId>
+	    <version>7.20.1</version>
 	</dependency>
+
 	
 	<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 	<dependency>
@@ -62,16 +68,13 @@
 	    <version>5.1.2</version>
 	</dependency>
 	
-	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
 	<dependency>
-	    <groupId>org.testng</groupId>
-	    <artifactId>testng</artifactId>
-	    <version>7.10.2</version>
-	    <scope>test</scope>
+	    <groupId>tech.grasshopper</groupId>
+	    <artifactId>extentreports-cucumber7-adapter</artifactId>
+	    <version>1.14.0</version>
 	</dependency>
 
 
-
-	
   </dependencies>
 </project>
